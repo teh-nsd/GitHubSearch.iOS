@@ -11,10 +11,12 @@ import SwiftUI
 struct GitHubSearch_iOSApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    private let applicationService = ApplicationService(environmentConfiguration: CurrentEnvironmentConfiguration())
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            
+            RootView(applicationService: applicationService)
         }
     }
 }
