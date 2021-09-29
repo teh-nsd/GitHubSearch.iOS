@@ -10,7 +10,7 @@ import Combine
 
 protocol CoreDomainServiceState {
     
-    var repositories: [Repositories]? { get set }
+    var repositories: [Repository]? { get set }
 }
 
 class CoreDomainService: ObservableObject {
@@ -19,7 +19,7 @@ class CoreDomainService: ObservableObject {
     
     struct PersistedState: State {
         
-        var repositories: [Repositories]?
+        var repositories: [Repository]?
     }
     
     @Published private(set) var state: State
@@ -32,7 +32,7 @@ class CoreDomainService: ObservableObject {
         self.api = api
     }
     
-    func loadRepositories() -> AnyPublisher<[Repositories], Error> {
+    func loadRepositories() -> AnyPublisher<[Repository], Error> {
         
         api.getRepositories()
             .receive(on: DispatchQueue.main)

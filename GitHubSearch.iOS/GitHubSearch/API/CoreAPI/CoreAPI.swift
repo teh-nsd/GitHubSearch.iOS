@@ -21,7 +21,7 @@ struct CoreAPI {
     let router: Router
     let networkClient: NetworkClient
     
-    func getRepositories() -> AnyPublisher<[Repositories], Error> {
+    func getRepositories() -> AnyPublisher<[Repository], Error> {
         
         /*
          Params:

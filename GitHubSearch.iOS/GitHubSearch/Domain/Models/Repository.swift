@@ -1,5 +1,5 @@
 //
-//  Repositories.swift
+//  Repository.swift
 //  GitHubSearch.iOS
 //
 //  Created by Nikolay Dimitrov on 27.09.21.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Repositories: Codable {
+struct Repository: Codable, Identifiable {
     
     let id: Int
     let name: String
