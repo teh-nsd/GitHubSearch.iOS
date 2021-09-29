@@ -26,11 +26,8 @@ struct RepositoriesView: View {
                 
                 List {
                     ForEach(repositories) { repository in
-                        ZStack {
-                            NavigationLink(destination: Text("\(repository.name)")) {
-                                Text("\(repository.name)")
-                            }
-                        }
+                        Link("\(repository.name)",
+                             destination: repository.url)
                     }
                 }
                 .hidden(repositories.isEmpty)
