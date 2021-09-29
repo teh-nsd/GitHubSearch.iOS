@@ -40,7 +40,7 @@ struct RepositoriesView: View {
                               dismissButton: .default(Text("Close")))
                 })
             }
-            .navigationTitle("Repositories")
+            .navigationBarTitle("Repositories")
             .onAppear() {
                 observeQueryChanges()
             }
@@ -72,7 +72,6 @@ struct RepositoriesView: View {
                     self.error = err
                 }
             } receiveValue: { repositories in
-                print(repositories)
                 self.repositories = repositories
             }
             .store(in: &subscriptions)

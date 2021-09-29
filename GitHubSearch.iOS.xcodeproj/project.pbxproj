@@ -131,7 +131,6 @@
 			children = (
 				432063472701B27A00A7D805 /* GitHubSearch_iOSApp.swift */,
 				432063712701B6A900A7D805 /* AppDelegate.swift */,
-				432063752701DAD200A7D805 /* ApplicationService.swift */,
 				432063742701B7D500A7D805 /* UI */,
 				4320637A2701DE3A00A7D805 /* Domain */,
 				432063812701E04100A7D805 /* API */,
@@ -181,6 +180,7 @@
 		4320637C2701DE4800A7D805 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				432063752701DAD200A7D805 /* ApplicationService.swift */,
 				4320637D2701DE6000A7D805 /* CoreDomainService.swift */,
 			);
 			path = Services;
