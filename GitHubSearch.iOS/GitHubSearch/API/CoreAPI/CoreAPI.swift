@@ -21,7 +21,7 @@ struct CoreAPI {
     let router: Router
     let networkClient: NetworkClient
     
-    func getRepositories() -> AnyPublisher<[Repository], Error> {
+    func getRepositories(query: String) -> AnyPublisher<[Repository], Error> {
         
         /*
          Params:
@@ -45,7 +45,7 @@ struct CoreAPI {
          */
         
         var components = URLComponents(url: router.repositories, resolvingAgainstBaseURL: true)
-        components?.percentEncodedQuery = "q=tetris" // TODO: Pass params
+        components?.percentEncodedQuery = "q=\(query)&per_page=100" // TODO: Pass params
         
         var request = URLRequest(url: (components?.url)!)
         request.httpMethod = "GET"

@@ -32,9 +32,9 @@ class CoreDomainService: ObservableObject {
         self.api = api
     }
     
-    func loadRepositories() -> AnyPublisher<[Repository], Error> {
+    func loadRepositories(query: String) -> AnyPublisher<[Repository], Error> {
         
-        api.getRepositories()
+        api.getRepositories(query: query)
             .receive(on: DispatchQueue.main)
             .handleEvents(receiveOutput: { repositories in
                 self.state.repositories = repositories

@@ -64,12 +64,12 @@ struct RepositoriesView: View {
         
         guard !query.isEmpty else { return }
         
-        loadRepositories()
+        loadRepositories(query: query)
     }
     
-    private func loadRepositories() {
+    private func loadRepositories(query: String) {
         
-        coreDomainService.loadRepositories()
+        coreDomainService.loadRepositories(query: query)
             .sink { completion in
                 if case .failure(let err as GitHubError) = completion {
                     self.error = err
