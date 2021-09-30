@@ -11,7 +11,6 @@
 		4320634A2701B27A00A7D805 /* RepositoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432063492701B27A00A7D805 /* RepositoriesView.swift */; };
 		4320634C2701B27C00A7D805 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4320634B2701B27C00A7D805 /* Assets.xcassets */; };
 		4320634F2701B27C00A7D805 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4320634E2701B27C00A7D805 /* Preview Assets.xcassets */; };
-		432063592701B27C00A7D805 /* GitHubSearch_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432063582701B27C00A7D805 /* GitHubSearch_iOSTests.swift */; };
 		432063722701B6A900A7D805 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432063712701B6A900A7D805 /* AppDelegate.swift */; };
 		432063762701DAD200A7D805 /* ApplicationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432063752701DAD200A7D805 /* ApplicationService.swift */; };
 		432063792701DB9800A7D805 /* EnvironmentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 432063782701DB9800A7D805 /* EnvironmentConfiguration.swift */; };
@@ -28,6 +27,12 @@
 		4320639F27033C0400A7D805 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4320639E27033C0400A7D805 /* SplashView.swift */; };
 		435AC92B27047D9C00447E15 /* AnyObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435AC92A27047D9C00447E15 /* AnyObservableObject.swift */; };
 		435AC92E2704831F00447E15 /* View+Hidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435AC92D2704831F00447E15 /* View+Hidden.swift */; };
+		438A26B327059AE60085B9C9 /* CoreAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A26B227059AE60085B9C9 /* CoreAPITests.swift */; };
+		438A26B527059BB00085B9C9 /* CoreAPI+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A26B427059BB00085B9C9 /* CoreAPI+Mock.swift */; };
+		438A26B927059ED70085B9C9 /* CoreAPIMocks.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 438A26B827059ED70085B9C9 /* CoreAPIMocks.bundle */; };
+		438A26BA27059ED70085B9C9 /* CoreAPIMocks.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 438A26B827059ED70085B9C9 /* CoreAPIMocks.bundle */; };
+		438A26BE2705AA630085B9C9 /* CoreDomainServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A26BD2705AA630085B9C9 /* CoreDomainServiceTests.swift */; };
+		438A26C02705AA780085B9C9 /* CoreDomainService+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438A26BF2705AA780085B9C9 /* CoreDomainService+Mock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +52,6 @@
 		4320634B2701B27C00A7D805 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4320634E2701B27C00A7D805 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		432063542701B27C00A7D805 /* GitHubSearch.iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubSearch.iOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		432063582701B27C00A7D805 /* GitHubSearch_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearch_iOSTests.swift; sourceTree = "<group>"; };
 		432063712701B6A900A7D805 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		432063752701DAD200A7D805 /* ApplicationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationService.swift; sourceTree = "<group>"; };
 		432063782701DB9800A7D805 /* EnvironmentConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentConfiguration.swift; sourceTree = "<group>"; };
@@ -64,6 +68,11 @@
 		4320639E27033C0400A7D805 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		435AC92A27047D9C00447E15 /* AnyObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyObservableObject.swift; sourceTree = "<group>"; };
 		435AC92D2704831F00447E15 /* View+Hidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Hidden.swift"; sourceTree = "<group>"; };
+		438A26B227059AE60085B9C9 /* CoreAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAPITests.swift; sourceTree = "<group>"; };
+		438A26B427059BB00085B9C9 /* CoreAPI+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreAPI+Mock.swift"; sourceTree = "<group>"; };
+		438A26B827059ED70085B9C9 /* CoreAPIMocks.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CoreAPIMocks.bundle; sourceTree = "<group>"; };
+		438A26BD2705AA630085B9C9 /* CoreDomainServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDomainServiceTests.swift; sourceTree = "<group>"; };
+		438A26BF2705AA780085B9C9 /* CoreDomainService+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDomainService+Mock.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +130,9 @@
 		432063572701B27C00A7D805 /* GitHubSearch.iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				432063582701B27C00A7D805 /* GitHubSearch_iOSTests.swift */,
+				438A26BB2705A9F10085B9C9 /* CoreAPI */,
+				438A26BC2705A9FA0085B9C9 /* Domain */,
+				438A26B827059ED70085B9C9 /* CoreAPIMocks.bundle */,
 			);
 			path = GitHubSearch.iOSTests;
 			sourceTree = "<group>";
@@ -257,6 +268,24 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		438A26BB2705A9F10085B9C9 /* CoreAPI */ = {
+			isa = PBXGroup;
+			children = (
+				438A26B227059AE60085B9C9 /* CoreAPITests.swift */,
+				438A26B427059BB00085B9C9 /* CoreAPI+Mock.swift */,
+			);
+			path = CoreAPI;
+			sourceTree = "<group>";
+		};
+		438A26BC2705A9FA0085B9C9 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				438A26BD2705AA630085B9C9 /* CoreDomainServiceTests.swift */,
+				438A26BF2705AA780085B9C9 /* CoreDomainService+Mock.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -339,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4320634F2701B27C00A7D805 /* Preview Assets.xcassets in Resources */,
+				438A26B927059ED70085B9C9 /* CoreAPIMocks.bundle in Resources */,
 				4320634C2701B27C00A7D805 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -347,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				438A26BA27059ED70085B9C9 /* CoreAPIMocks.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +413,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				432063592701B27C00A7D805 /* GitHubSearch_iOSTests.swift in Sources */,
+				438A26BE2705AA630085B9C9 /* CoreDomainServiceTests.swift in Sources */,
+				438A26B527059BB00085B9C9 /* CoreAPI+Mock.swift in Sources */,
+				438A26C02705AA780085B9C9 /* CoreDomainService+Mock.swift in Sources */,
+				438A26B327059AE60085B9C9 /* CoreAPITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
