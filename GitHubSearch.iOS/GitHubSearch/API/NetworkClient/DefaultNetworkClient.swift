@@ -36,7 +36,7 @@ class DefaultNetworkClient: NetworkClient {
     }
     
     func performRequestPublisher(_ request: URLRequest) -> AnyPublisher<(data: Data, response: URLResponse), Error> {
-        print("@@ get")
+        
         var request = request
         let timeZoneID = TimeZone.current.identifier
         let localTime = dateFormatter.string(from: Date())

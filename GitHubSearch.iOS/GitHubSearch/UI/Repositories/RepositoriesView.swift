@@ -12,9 +12,12 @@ struct RepositoriesView: View {
     
     @EnvironmentObject var coreDomainService: CoreDomainService
     @ObservedObject private var query: AnyObservableObject<String> = .init("")
-    @State private var repositories: [Repository] = []
     @State private var subscriptions = Set<AnyCancellable>()
     @State private var error: GitHubError?
+    
+    private var repositories: [Repository] {
+        coreDomainService.state.repositories ?? []
+    }
     
     var body: some View {
         
@@ -71,9 +74,7 @@ struct RepositoriesView: View {
                 if case .failure(let err as GitHubError) = completion {
                     self.error = err
                 }
-            } receiveValue: { repositories in
-                self.repositories = repositories
-            }
+            } receiveValue: { _ in }
             .store(in: &subscriptions)
     }
 }
