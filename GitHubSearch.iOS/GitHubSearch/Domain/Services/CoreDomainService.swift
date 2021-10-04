@@ -36,8 +36,8 @@ class CoreDomainService: ObservableObject {
         
         api.getRepositories(query: query)
             .receive(on: DispatchQueue.main)
-            .handleEvents(receiveOutput: { repositories in
-                self.state.repositories = repositories
+            .handleEvents(receiveOutput: { [weak self] repositories in
+                self?.state.repositories = repositories
             })
             .eraseToAnyPublisher()
     }
